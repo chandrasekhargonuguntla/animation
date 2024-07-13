@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+ * {
+    margin: 0;
+    padding: 0;
+       }
+.a {
+  width: 200px;
+  height: 300px;
+  background-image:url("images/chandu2.jpg");
+  background-size: cover;
+  border:15px solid rgb(122, 245, 122);
+  border-radius:8px;
+  position: relative;
+  animation-name: example;
+  animation-duration:2s;
+  animation-iteration-count: infinite;
+ 
+}
+@keyframes example {
+  0%   {border-color:red; left:100px; top:100px;}
+  25%  {border-color:yellow; background-image: url(images/chandu4.jpg); left:400px; top:0px;}
+  50%  {border-color:blue;background-image: url(images/chandu3.jpg); left:100px; top:100px;}
+  75%  {border-color:green; left:0px; top:100px;}
+  100% {border-color:red; left:0px; top:0px;}
+}
+ .z {
+  width: 300px;
+  height:400px;
+  background-image:url("images/chandu3.jpg");
+  background-size: cover;
+  border:15px solid rgb(134, 6, 253);
+  border-radius:8px;
+  position: relative;
+  animation-name: mahi;
+  animation-duration:10s;
+  animation-direction: normal;
+  animation-direction: reverse;
+  animation-iteration-count: infinite;
+  
+}
+
+
+@keyframes mahi {
+  0%   {border-color:red; left:0px; top:0px;}
+  25%  {border-color:yellow; background-image: url(images/chandu4.jpg); left:800px; right:0px;}
+  50%  {border-color:blue;background-image: url(images/chandu2.jpg); left:800px; right:800px;}
+  75%  {border-color:green; left:0px; right:800px;}
+  100% {border-color:red; left:0px; right:0px;}
+}
+
+
+.loading {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+}
+.loader div {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: anime 8s ease-in-out infinite;
+    display: inline-block;
+    margin: 0.5rem;
+}
+.loader div:nth-child(1) {
+    animation-delay: 0.8s;
+    margin-left:30px;
+}
+.loader div:nth-child(2) {
+    animation-delay: 1s;
+      margin-left:100px;
+}
+.loader div:nth-child(3) {
+    animation-delay: 1.2s;
+    margin-left:100px;
+}
+.loader div:nth-child(4) {
+    animation-delay: 1.4;
+    margin-left:100px;
+}
+.loader div:nth-child(5) {
+    animation-delay: 1.6s;
+    margin-left:100px;
+}
+.loader div:nth-child(6) {
+    animation-delay: 2.2s;
+    margin-left:100px;
+}
+.loader div:nth-child(7) {
+    animation-delay: 3s;
+    margin-left:100px;
+}
+@keyframes anime {
+    0%, 100% {
+        transform: scale(2);
+        background-image: url("images/chandu1.jpg");
+        background-size: cover;
+    }
+    40% {
+        transform: scale(4);
+        background-image: url("images/chandu3.jpg");
+        background-size: cover;
+    }
+    50% {
+        transform: scale(6);
+        background-image: url("images/chandu4.jpg");
+        background-size: cover;
+    
+    }
+    60% {
+        transform: scale(8);
+        background-image: url("images/bag15.jpg");
+        background-size: cover;
+    
+    }
+     
+    30% {
+        transform: scale(10);
+        background-image: url("images/bag10.webp");
+        background-size: cover;
+    
+    }
+
+    20% {
+        transform: scale(12);
+        background-image: url("images/chandu2.jpg");
+        background-size: cover;
+    
+    }
+
+    70% {
+        transform: scale(12);
+        background-image: url("images/chandu2.jpg");
+        background-size: cover;
+    
+    }
+}
+
+
+
+h1{
+  margin-top:20px;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Chandu Animation</h2>
+
+<div class="a"></div><br><br>
+<div class="z"></div>
+<div class="loading">
+  <div class="loader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+  </div>
+</div>
+<h1><b>Note:</b> Hi Hello This IS Chandra Sekhar Cinereous Technologies</h1>
+
+</body>
+</html>
+
+
